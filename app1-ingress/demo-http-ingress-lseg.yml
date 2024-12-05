@@ -15,23 +15,3 @@ spec:
                 port:
                   number: 80
       host: v1.app.avi.com
-    - http:
-        paths:
-          - pathType: Prefix
-            path: /
-            backend:
-              service:
-                name: svc-v2
-                port:
-                  number: 80
-      host: v2.app.avi.com
-    - http:
-        paths:
-          - pathType: Prefix
-            path: /
-            backend:
-              service:
-                name: svc-v3
-                port:
-                  number: 80
-      host: v3.app.avi.com
